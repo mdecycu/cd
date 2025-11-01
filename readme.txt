@@ -21,6 +21,7 @@ Y:\tmp>scite readme.txt
 Y:\tmp>cd cd
 
 Y:\tmp\cd>git init
+
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -51,6 +52,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 Y:\tmp\cd>git add readme.txt
 
 Y:\tmp\cd>git commit -m "新增 readme.txt"
+
 [main (root-commit) ffec433] 新增 readme.txt
  1 file changed, 9 insertions(+)
  create mode 100644 readme.txt
@@ -60,6 +62,7 @@ Y:\tmp\cd>git remote add origin git@mdecycu:mdecycu/cd.git
 mdecycu 用戶的近端 ssh session 名稱為 mdecycu, 此指令組長利用 git remote 指令, 建立一個近端倉儲設定, 以 origin 為代號, 將此代號設定為 git@mdecycu:mdecycu/cd.git, 此設定執行後將會寫入 cd 倉儲的 .git/config 檔案中
 
 Y:\tmp\cd>git push -u origin main
+
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 4 threads
@@ -75,6 +78,29 @@ git push 指令額外使用 -u 表示要內定 upstream (上游) 倉儲的分支
 指令執行之後, 若近端的 ssh privatekey 與 github key server 上已經登錄的 public key (可以視為維護(開啟)倉儲的鎖頭) 為一個 pair, 則可以將近端的提交內容, 推送到 github 倉儲中
 
 Y:\tmp\cd>
+
+組長完成上述內容編輯後的指令:
+
+Y:\tmp\cd>git add .
+
+Y:\tmp\cd>git commit -m "在 readme.txt 中說明組長在近端的指令操作"
+
+[main 7e52c5b] 在 readme.txt 中說明組長在近端的指令操作
+ 1 file changed, 238 insertions(+), 1 deletion(-)
+
+Y:\tmp\cd>git push
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.82 KiB | 1.82 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To mdecycu:mdecycu/cd.git
+   ffec433..7e52c5b  main -> main
+
+Y:\tmp\cd>
+
 
 
 

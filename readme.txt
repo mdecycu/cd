@@ -101,6 +101,27 @@ To mdecycu:mdecycu/cd.git
 
 Y:\tmp\cd>
 
+Y:\tmp\cd>git add .
+
+Y:\tmp\cd>git commit -m "針對第二次提交所使用的指令說明"
+
+[main 9ec70a2] 針對第二次提交所使用的指令說明
+ 1 file changed, 26 insertions(+)
+
+Y:\tmp\cd>git push
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 620 bytes | 310.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To mdecycu:mdecycu/cd.git
+   7e52c5b..9ec70a2  main -> main
+
+Y:\tmp\cd>
+
 
 
 

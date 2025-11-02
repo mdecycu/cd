@@ -1,0 +1,30 @@
+這個檔案是 scrum-1 用戶的資料註記檔案
+
+Y:\tmp>cd cd
+
+更換目錄到 cd
+
+Y:\tmp\cd>git branch
+* main
+
+目前位於 main 分支
+
+Y:\tmp\cd>git checkout -b scrum-1
+
+Switched to a new branch 'scrum-1'
+
+但此時 scrum-1 分支尚未存在, 因此利用 git checkout -b 加上分支名稱, 可以同時新增分支且直接切入
+
+Y:\tmp\cd>
+
+這個階段, scrum-1 必須先接受組長送出的倉儲共同維護邀請 (invitation), 同意後才能用 scrum-1 的 SSH session 設定取下協同倉儲
+
+接下來準備將此一階段的版本推向 scrum-1 分支, 其中包括 images 目錄中有 github 帳號下的邀請畫面, 還有這個 scrum-1.txt 檔案
+
+這時 git branch 可見已經切到 scrum-1 分支:
+
+Y:\tmp\cd>git branch
+  main
+* scrum-1
+
+Y:\tmp\cd>

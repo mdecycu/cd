@@ -28,3 +28,33 @@ Y:\tmp\cd>git branch
 * scrum-1
 
 Y:\tmp\cd>
+
+Y:\tmp\cd>git add .
+
+Y:\tmp\cd>git commit -m "add images 目錄, 放入邀請截圖, 還有加入 scrum-1.txt 作為個人的協同相關記錄"
+[scrum-1 5b508d0] add images 目錄, 放入邀請截圖, 還有加入 scrum-1.txt 作為個人的協同相關記錄
+ 2 files changed, 30 insertions(+)
+ create mode 100644 images/scrum-1_cd_invitation.png
+ create mode 100644 scrum-1.txt
+
+Y:\tmp\cd>git config user.name "scrum-1"
+
+Y:\tmp\cd>git config user.email "scrum1@mde.tw"
+
+Y:\tmp\cd>git push origin scrum-1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 4.40 KiB | 4.40 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'scrum-1' on GitHub by visiting:
+remote:      https://github.com/mdecycu/cd/pull/new/scrum-1
+remote:
+To mdecycu:mdecycu/cd.git
+ * [new branch]      scrum-1 -> scrum-1
+
+Y:\tmp\cd>
+
+上一個提交使用 mdecycu, 照理說應該是使用 scrum-1 的身分進行提交推送到 scrum-1 分支

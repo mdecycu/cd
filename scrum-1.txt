@@ -58,3 +58,18 @@ To mdecycu:mdecycu/cd.git
 Y:\tmp\cd>
 
 上一個提交使用 mdecycu, 照理說應該是使用 scrum-1 的身分進行提交推送到 scrum-1 分支
+
+Y:\tmp\cd>git clone https://github.com/mdecycu/cmsimde.git
+Cloning into 'cmsimde'...
+remote: Enumerating objects: 8131, done.
+remote: Counting objects: 100% (2029/2029), done.
+remote: Compressing objects: 100% (1066/1066), done.
+remote: Total 8131 (delta 939), reused 1958 (delta 870), pack-reused 6102 (from 1)
+Receiving objects: 100% (8131/8131), 23.92 MiB | 19.50 MiB/s, done.
+Resolving deltas: 100% (969/969), done.
+
+因為 cmsimde 倉儲必須位於倉儲的根目錄中, 因此直接在 scrum-1 分支取下 cmsimde 檔案後, 再設法刪除 .git 目錄
+
+請注意: 取下的 cmsimde 倉儲中的 .git 目錄一定要刪除, .gitignore 也可以刪除, 最後則將 up_dir 目錄中的檔案複製到倉儲中
+
+複製完成後先在 scrum-1 分支中進行測試
